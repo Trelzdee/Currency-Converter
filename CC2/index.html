@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Currency Converter</title>
+    <link rel="icon" type="image/x-icon" href="/Images/cc1.png">
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="/Images/cccc1.png" alt="">
+        <img  class= "logo2" src="/Images/cc4.png" alt="">
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" class="fromCurrency" autofocus value="1">
+            </div>
+              <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <img class="CFlag" src="https://flagsapi.com/NG/flat/64.png" alt="">
+                        <select class="fromPair">
+                        </select>
+                    </div>
+                </div>
+                <div class="icon">
+                    <img src="/Images/arrows-exchange-2.svg" alt="">
+                </div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img  class= "CFlag" src="https://flagsapi.com/US/flat/64.png" alt="">
+                        <select class='toPair'> 
+                        </select>
+                    </div>
+                </div>
+              </div>
+              <div class="convert">
+                <input type="text" disabled name="" class="toCurrency" onclick="ToClear()">
+              </div>
+              <button class="btn">Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="/JA/country-list.js"></script>
+    <script src="/JA/script.js"></script>
+</body>
+</html>
